@@ -1,4 +1,5 @@
 import 'package:application/component/calender.dart';
+import 'package:application/component/font.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
     appBar: AppBar(
-      title: Center(child: Text('홈',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),),
+      title: Center(child: Text('홈',style:DomiTextStyle.title,),),
       shape: Border(bottom: BorderSide(color: Color(0xff939393),width: 1)),
     ),
       body: Padding(

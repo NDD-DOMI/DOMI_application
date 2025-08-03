@@ -1,3 +1,4 @@
+import 'package:application/component/font.dart';
 import 'package:flutter/material.dart';
 
 class MyPage extends StatefulWidget {
@@ -12,7 +13,7 @@ class _MyPageState extends State<MyPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('마이페이지',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20),)),
+        title: Center(child: Text('마이페이지',style: DomiTextStyle.title,)),
         shape: Border(bottom: BorderSide(color: Color(0xff939393),width: 1)),
       ),
     );

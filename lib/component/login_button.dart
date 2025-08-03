@@ -1,3 +1,4 @@
+import 'package:application/component/font.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,7 +14,7 @@ class LoginBotton extends StatelessWidget {
       ),
       child: Padding(
         padding:  EdgeInsets.symmetric(horizontal: 150.w,vertical:18.h),
-        child: Text(title,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600,color: Colors.white),),
+        child: Text(title,style: DomiTextStyle.idButton,),
       ),
     );
   }

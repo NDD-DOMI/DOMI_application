@@ -2,6 +2,7 @@ import 'package:application/component/bottom.dart';
 import 'package:application/component/calender.dart';
 import 'package:application/view/home_page.dart';
 import 'package:application/view/login_page.dart';
+import 'package:application/view/notification_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -28,9 +29,10 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.white,          // 앱바 배경색 흰색
               elevation: 0,
           ),
+              fontFamily: 'Pretendard'
           ),
           debugShowCheckedModeBanner: false,
-          home: const Bottom(),
+          home: const LoginPage(),
         );
       }
     );

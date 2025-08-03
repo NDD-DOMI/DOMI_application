@@ -1,3 +1,4 @@
+import 'package:application/component/font.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -7,7 +8,7 @@ class TextsField extends StatelessWidget {
     required this.title,
     required this.hintText,
     required this.obsText,
-    required this.suffixIcon,
+    this.suffixIcon,
   });
 
   final String title;
@@ -17,22 +18,19 @@ class TextsField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final baseboder = OutlineInputBorder(
-      borderRadius: BorderRadius.circular(8),
-      borderSide: BorderSide(color: Color(0xff939393)),
+   final basebroder = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.r),
+      borderSide: const BorderSide(color: Color(0xff939393)),
     );
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-        ),
+        Text( title, style: DomiTextStyle.rowTitle),
         SizedBox(height: 4.h),
         TextFormField(
           obscureText: obsText,
           style: TextStyle(decorationThickness: 0),
-          decoration: InputDecoration(hintText: hintText, border: baseboder,
+          decoration: InputDecoration(hintText: hintText, border: basebroder,
           suffixIcon: suffixIcon,
           ),
         ),

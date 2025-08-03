@@ -21,6 +21,7 @@ class _BottomState extends State<Bottom> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.white,),
       backgroundColor: Colors.white,
          body: IndexedStack(
       index: current_Index,

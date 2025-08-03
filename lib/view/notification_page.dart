@@ -1,3 +1,4 @@
+import 'package:application/component/font.dart';
 import 'package:application/component/notification.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class _NotificationPageState extends State<NotificationPage> {
       appBar: AppBar(
         scrolledUnderElevation: 0,
         shape: Border(bottom: BorderSide(color: Color(0xff939393),width: 1)),
-        title: Center(child: Text('알림',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),),
+        title: Center(child: Text('알림',style: DomiTextStyle.title),),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20),
